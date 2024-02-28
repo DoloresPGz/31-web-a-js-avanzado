@@ -1,0 +1,14 @@
+{
+  "name": "31-web-a-js-avanzado",
+  "version": "1.0.0",
+  "description": "Este es el primer proyecto de NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devf",
+  "license": "ISC",
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  }
+}
