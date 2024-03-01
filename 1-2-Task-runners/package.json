@@ -1,0 +1,22 @@
+{
+  "name": "1-2-task-runners",
+  "version": "1.0.1",
+  "description": "Ejemplos de task runners y esm contra cjs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tienes pruebas por correr\" && exit 1",
+    "dev": "npx nodemon index.js"
+  },
+  "keywords": [
+    "task-runners",
+    "esm",
+    "cjs"
+  ],
+  "author": "Dolores Parra",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "picocolors": "^1.0.0"
+  }
+}
