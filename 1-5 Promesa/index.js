@@ -11,7 +11,7 @@ function promesa () {
                 console.log('Promesa por rechazar');
                 reject();
             }
-        }, 3000)
+        }, 3000);
     });
 }
 
