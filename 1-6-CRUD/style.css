@@ -1,3 +1,54 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.crud-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btn-add{
+    background-color: #4d9604;
+}
+
+.btn-edit{
+    background-color: #c05d16;
+}
+
+.btn-delete{
+    background-color: #ff0000;
+}
+
+.article-container{
+    margin: 20px;
+}
+
+.article-container section{
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.article-container section:hover{
+    background-color: #f0f0f0;
+}
