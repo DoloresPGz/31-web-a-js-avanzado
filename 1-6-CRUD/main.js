@@ -14,7 +14,19 @@ function loadItems() {
     fetch(apiURL)
     .then(response => response.json())
     .then(items => {
-        console.log("respuesta", items)
+        itemContainer.innerHTML = ""
+        items.forEach( 
+            item =>{
+               const section = document.createElement("section")
+               section.innerHTML = `
+                <strong>${item.name}</strong>
+                <p>${item.price}</p>
+                <button class="btn btn-edit" data-id="${item._id}">Editar</button>
+                <button class="btn btn-delete" data-id="${item._id}">Eliminar</button>
+               `
+               itemContainer.appendChild(section)
+            }
+        );
     })
 }
 
@@ -41,5 +53,5 @@ itemForm.addEventListener("submit", function (event) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    //loadItems()
+    loadItems()
 })
