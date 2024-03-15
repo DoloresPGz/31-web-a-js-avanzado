@@ -18,9 +18,28 @@ function loadItems() {
     })
 }
 
+//ALTA DE UN ITEM
+itemForm.addEventListener("submit", function (event) {
+    event.preventDefault()
+    
+    const newItem = {
+        name: nameInput.value,
+        price: priceInput.value 
+    }
 
+    fetch(apiURL, {
+        method : "POST",
+        body: JSON.stringify(newItem),
+        headers : {
+            "Content-type" : "application/json"
+        }
+    })
+    .then(response => {
+        console.log(response);
+    })
+})
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadItems()
+    //loadItems()
 })
