@@ -1,0 +1,16 @@
+{
+  "name": "1-6-crud",
+  "version": "1.0.0",
+  "description": "Practica para crear un CRUD de una lista de articulos",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "module"
+  ],
+  "author": "Dolores Parra",
+  "license": "ISC"
+}
